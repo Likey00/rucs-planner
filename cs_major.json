@@ -1,0 +1,851 @@
+{
+  "name": "Computer Science",
+  "all_reqs": {
+    "Calculus 1": {
+      "reqs": ["math135", "math151"],
+      "counts_for": ["Mathematics"],
+      "needed": 1
+    },
+    "Mathematics": {
+      "reqs": ["math152", "math250", "Calculus 1"],
+      "counts_for": ["CS Major"],
+      "needed": 3
+    },
+    "Required CS": {
+      "reqs": ["cs111", "cs112", "cs205", "cs206", "cs211", "cs344"],
+      "counts_for": ["CS Major"],
+      "needed": 6
+    },
+    "Physics Option 1": {
+      "reqs": ["phys203", "phys204", "phys205", "phys206"],
+      "counts_for": ["Science"],
+      "needed": 4
+    },
+    "Physics Option 2": {
+      "reqs": ["phys123", "phys124", "phys227", "phys229"],
+      "counts_for": ["Science"],
+      "needed": 4
+    },
+    "Physics Option 3": {
+      "reqs": ["phys271", "phys272", "phys275", "phys276"],
+      "counts_for": ["Science"],
+      "needed": 4
+    },
+    "Chemistry Option 1": {
+      "reqs": ["chem159", "chem160", "chem171"],
+      "counts_for": ["Science"],
+      "needed": 3
+    },
+    "Chemistry Option 2": {
+      "reqs": ["chem161", "chem162", "chem171"],
+      "counts_for": ["Science"],
+      "needed": 3
+    },
+    "Chemistry Option 3": {
+      "reqs": ["chem163", "chem164", "chem171"],
+      "counts_for": ["Science"],
+      "needed": 3
+    },
+    "Science": {
+      "counts_for": ["CS Major"],
+      "reqs": [
+        "Physics Option 1", "Physics Option 2", "Physics Option 3",
+        "Chemistry Option 1", "Chemistry Option 2", "Chemistry Option 3"
+      ],
+      "needed": 1
+    },
+    "CS Electives": {
+      "reqs": [
+        "cs210", "cs213", "cs214", "cs314", "cs323", "cs334", "cs336", 
+        "cs352", "cs415", "cs416", "cs417", "cs419", "cs425", "cs428", 
+        "cs431", "cs439", "cs440", "cs452", "cs461", "cs462"
+      ],
+      "counts_for": ["CS Major"],
+      "needed": 7
+    },
+    "CS Residency": {
+      "reqs": [
+        "cs103", "cs107", "cs110", "cs111", "cs112", "cs142", "cs205", 
+        "cs206", "cs210", "cs211", "cs213", "cs214", "cs314", "cs323", 
+        "cs334", "cs336", "cs344", "cs352", "cs405", "cs415", "cs416", 
+        "cs417", "cs419", "cs425", "cs428", "cs431", "cs439", "cs440", 
+        "cs461", "cs462" 
+      ],
+      "counts_for": ["CS Major"],
+      "needed": 7
+    },
+    "cs352 or cs416": {
+      "reqs": ["cs352", "cs416"],
+      "counts_for": [],
+      "needed": 1
+    },
+    "cs314 or cs336 or cs352 or cs416": {
+      "reqs": ["cs314", "cs336", "cs352", "cs416"],
+      "counts_for": [],
+      "needed": 1
+    }
+  },
+  "major_reqs": {
+    "reqs": ["Mathematics", "Required CS", "Science", "CS Electives", "CS Residency"],
+    "counts_for": [],
+    "needed": 5
+  },
+  "all_classes": {
+    "math135": {
+      "name": "Calculus 1 for the Life and Social Sciences",
+      "credits": 4,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Calculus 1"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "math151": {
+      "name": "Calculus 1 for the Mathematical and Physical Sciences",
+      "credits": 4,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Calculus 1"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "math152": {
+      "name": "Calculus 2 for the Mathematical and Physical Sciences",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["Calculus 1"],
+        "counts_for": ["Mathematics"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "math250": {
+      "name": "Introductory Linear Algebra",
+      "credits": 3,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Mathematics"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys203": {
+      "name": "General Physics",
+      "credits": 3,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Physics Option 1"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys204": {
+      "name": "General Physics",
+      "credits": 3,
+      "prereqs": {
+        "reqs": ["phys203"],
+        "counts_for": ["Physics Option 1"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys205": {
+      "name": "General Physics Laboratory",
+      "credits": 1,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Physics Option 1"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys206": {
+      "name": "General Physics Laboratory",
+      "credits": 1,
+      "prereqs": {
+        "reqs": ["phys203", "phys205"],
+        "counts_for": ["Physics Option 1"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys123": {
+      "name": "Analytical Physics 1",
+      "credits": 2,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Physics Option 2"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": true
+      }
+    },
+    "phys124": {
+      "name": "Analytical Physics 1",
+      "credits": 2,
+      "prereqs": {
+        "reqs": ["phys123"],
+        "counts_for": ["Physics Option 2"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "phys227": {
+      "name": "Analytical Physics 2",
+      "credits": 3,
+      "prereqs": {
+        "reqs": ["math152", "phys124"],
+        "counts_for": ["Physics Option 2"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys229": {
+      "name": "Analytical Physics 2 Laboratory",
+      "credits": 1,
+      "prereqs": {
+        "reqs": ["phys124"],
+        "counts_for": ["Physics Option 2"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "phys271": {
+      "name": "Honors Physics 1",
+      "credits": 3,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Physics Option 3"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "phys272": {
+      "name": "Honors Physics 2",
+      "credits": 3,
+      "prereqs": {
+        "reqs": ["math152", "phys271"],
+        "counts_for": ["Physics Option 3"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "phys275": {
+      "name": "Classical Physics Lab 1",
+      "credits": 2,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Physics Option 3"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "phys276": {
+      "name": "Classical Physics Lab 2",
+      "credits": 2,
+      "prereqs": {
+        "reqs": ["phys271", "phys275"],
+        "counts_for": ["Physics Option 3"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "chem159": {
+      "name": "General Chemistry for Engineers",
+      "credits": 3,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Chemistry Option 1"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "chem160": {
+      "name": "General Chemistry for Engineers",
+      "credits": 3,
+      "prereqs": {
+        "reqs": ["chem159", "chem161", "chem163"],
+        "counts_for": ["Chemistry Option 1"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "chem161": {
+      "name": "General Chemistry",
+      "credits": 4,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Chemistry Option 2"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "chem162": {
+      "name": "General Chemistry",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["chem159", "chem161", "chem163"],
+        "counts_for": ["Chemistry Option 2"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "chem163": {
+      "name": "Honors General Chemistry",
+      "credits": 4,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Chemistry Option 3"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "chem164": {
+      "name": "Honors General Chemistry",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["chem163"],
+        "counts_for": ["Chemistry Option 3"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "chem171": {
+      "name": "Introduction to Experimentation",
+      "credits": 1,
+      "prereqs": {
+        "reqs": ["chem159", "chem161", "chem163"],
+        "counts_for": ["Chemistry Option 1", "Chemistry Option 2", "Chemistry Option 3"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs103": {
+      "name": "Introduction to Computer Infrastructure",
+      "credits": 1,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["CS Residency"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs107": {
+      "name": "Computing for Math and the Sciences",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["Calculus 1"],
+        "counts_for": ["CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs110": {
+      "name": "Principles of Computer Science",
+      "credits": 3,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["CS Residency"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs111": {
+      "name": "Introduction to Computer Science",
+      "credits": 4,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["Required CS", "CS Residency"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs112": {
+      "name": "Data Structures",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs111"],
+        "counts_for": ["Required CS", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs142": {
+      "name": "Data 101",
+      "credits": 4,
+      "prereqs": {
+        "reqs": [],
+        "counts_for": ["CS Residency"],
+        "needed": 0
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs205": {
+      "name": "Introduction to Discrete Structures 1",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs111"],
+        "counts_for": ["Required CS", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs206": {
+      "name": "Introduction to Discrete Structures 2",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs111", "math152"],
+        "counts_for": ["Required CS", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs210": {
+      "name": "Data Management for Data Science",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs111"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs211": {
+      "name": "Computer Architecture",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs112"],
+        "counts_for": ["Required CS", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs213": {
+      "name": "Software Methodology",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs112"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs214": {
+      "name": "Systems Programming",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs112"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs314": {
+      "name": "Principles of Programming Languages",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs205", "cs211"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs323": {
+      "name": "Numerical Analysis and Computing",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math152", "math250"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs334": {
+      "name": "Introduction to Imaging and Multimedia",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math250", "cs112", "cs206"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 3
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "cs336": {
+      "name": "Principles of Information and Data Management",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math152", "cs112", "cs205"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 3
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs344": {
+      "name": "Design and Analysis of Computer Algorithms",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs112", "cs206"],
+        "counts_for": ["Required CS", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs352": {
+      "name": "Numerical Analysis and Computing",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs206", "cs211"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs415": {
+      "name": "Compilers",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs314"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs416": {
+      "name": "Operating Systems Design",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs214"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs417": {
+      "name": "Distributed Systems: Concepts and Design",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs416"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs419": {
+      "name": "Computer Security",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs205", "cs352 or cs416"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs425": {
+      "name": "Brain Inspired Computing",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs206"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs428": {
+      "name": "Introduction to Computer Graphics",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math152", "math250", "cs112"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 3
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs431": {
+      "name": "Software Engineering",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs213", "cs314 or cs336 or cs352 or cs416"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs439": {
+      "name": "Introduction to Data Science",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs205"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": false
+      }
+    },
+    "cs440": {
+      "name": "Introduction to Artificial Intelligence",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math152", "cs205"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 2
+      },
+      "sems": {
+        "fall": true,
+        "spring": true,
+        "summer": true
+      }
+    },
+    "cs452": {
+      "name": "Formal Languages and Automata",
+      "credits": 3,
+      "prereqs": {
+        "reqs": ["cs344"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "cs460": {
+      "name": "Introduction to Computational Robotics",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["cs206"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 1
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "cs461": {
+      "name": "Machine Learning Principles",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math250", "cs112", "cs206"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 3
+      },
+      "sems": {
+        "fall": true,
+        "spring": false,
+        "summer": false
+      }
+    },
+    "cs462": {
+      "name": "Deep Learning",
+      "credits": 4,
+      "prereqs": {
+        "reqs": ["math250", "cs112", "cs206"],
+        "counts_for": ["CS Electives", "CS Residency"],
+        "needed": 3
+      },
+      "sems": {
+        "fall": false,
+        "spring": true,
+        "summer": false
+      }
+    }
+  }
+}
